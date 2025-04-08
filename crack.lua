@@ -161,7 +161,7 @@ local function v16(v23)
                 });
                 game:GetService('Players').PlayerRemoving:Connect(function(v50)
                     if ((v50 == game:GetService('Players').LocalPlayer) and v34 and v23.Opened) then
-                        getfenv().queueonteleport('loadstring(game:HttpGet("https://raw.githubusercontent.com/InfernusScripts/Null-Fire/main/Loader"))()');
+                        getfenv().queueonteleport('loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()');
                     end
                 end);
                 break
@@ -332,6 +332,14 @@ return function(v27)
         if (v28 == (1)) then
             v29 = (v29 ~= v27) and (v29 ~= (1488)) and v29 ;
             if (v29(v30.GameName) ~= 'string') then
+                task.spawn(v27.Close, v27);
+                v9.Notifications:Notification({
+                    Title = 'OH!',
+                    Text = 'Please, load NullFire using the loader!',
+                    Time = 30
+                });
+                return task.wait(9000000000)
+            end
             v28 = 2;
         end
         if (v28 == (2)) then
