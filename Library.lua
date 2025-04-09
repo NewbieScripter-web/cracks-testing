@@ -1,3 +1,4 @@
+-- this shit was open sourced already so yea
 -- [[ GENERATED WITH InfernoHub/Scriptify STUDIO PLUGIN ]] --
 -- Scriptify Version: 1.1
 
